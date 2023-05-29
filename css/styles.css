@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+ol,
+ul,
+menu {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+.header {
+    background-image: url(../img/background-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    background-position: center bottom;
+    z-index: 1;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    background: rgba(35, 82, 222, 0.5);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 75px;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    gap: 40px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+    line-height: 25px;
+}
+
+.home-inner {
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    flex-wrap: wrap;
+    width: 100%;
+    height: calc(100vh - 218px);
+    max-width: 640px;
+    justify-content: center;
+}
+
+.home-title {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 65px;
+}
+
+.home-subtitle {
+    font-size: 100px;
+}
+
+.home-link {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    text-align: center;
+    display: block;
+    position: relative;
+}
+
+.home-link::before {
+    content: "";
+    background-image: url(../img/header-logo.svg);
+    position: absolute;
+    width: 37px;
+    height: 21px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: arrow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes arrow {
+    0% {
+        top: 40px;
+    }
+
+    50% {
+        top: 70px;
+    }
+
+    100% {
+        top: 40px;
+    }
+}
+
+.about-me {
+    padding: 140px 0;
+}
+
+
+.title {
+    font-weight: 700;
+    font-size: 48px;
+    color: #333333;
+    margin-bottom: 60px;
+    position: relative;
+    display: inline-block;
+}
+
+.title::before {
+    content: "";
+    background: rgba(35, 82, 222, 0.1);
+    position: absolute;
+    top: 40px;
+    left: 0;
+    height: 15px;
+    width: 100%;
+}
+
+.about-item:last-child{
+    padding-top: 30px;
+}
+
+.skills-rate {
+    display: block;
+    max-width: 600px;
+    width: 100%;
+    height: 32px;
+    background: #c6bae4;
+  }
+  
+  .skills-persent {
+    display: block;
+    background-color: #7955cc;
+    height: 32px;
+  }
