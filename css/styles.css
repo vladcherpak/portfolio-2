@@ -82,9 +82,13 @@ body {
 .header__inner {
     display: flex;
     width: 100%;
-    height: calc(100vh - 218px);
+    height: calc(100vh - 211px);
     max-width: 640px;
     align-items: center;
+}
+
+.header__div {
+    height: 80px;
 }
 
 .header__title{
@@ -128,7 +132,7 @@ body {
     }
 
     50% {
-        top: 70px;
+        top: 65px;
     }
 
     100% {
@@ -162,6 +166,10 @@ body {
 
 .about-item:last-child{
     padding-top: 30px;
+}
+
+.skills {
+    padding-bottom: 150px;
 }
 
 .skills-rate {
@@ -202,4 +210,60 @@ body {
     justify-content: center;
     padding-bottom: 80px;
     padding-left: 10%;
+  }
+  .services {
+    padding-bottom: 133px;
+  }
+  .services__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+    .services__item {
+    max-width: 330px;
+    width: 100%;
+    padding-top:90px;
+    position: relative;
+    }
+
+    .services__item::before {
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        top: 0;
+        left: 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .services__item--code::before {
+        background-image: url(/img/serv-first.svg);
+    }
+
+    .services__item--cms::before {
+        background-image: url(/img/serv-second.svg);
+        
+    }
+
+    .services__item--cite::before {
+        background-image: url(/img/serv-third.svg);
+    }
+
+  .services__item h2 {
+    font-weight: 600;
+    font-size: 28px;
+    padding-bottom: 30px;
+  }
+
+  .services__item p {
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .works__list {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 45px;
   }
