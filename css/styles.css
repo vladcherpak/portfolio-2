@@ -421,15 +421,15 @@ body {
   }
 }
 
-
 .achiev {
   padding-top: 140px;
   margin-bottom: 140px;
 }
 
 .achiev__list {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  gap: 17px;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .achiev__item {
@@ -483,6 +483,18 @@ body {
   margin-bottom: 50px;
 }
 
+@media screen and (max-width: 992px) {
+  .achiev__list {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .achiev__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .contacts {
   margin-bottom: 140px;
 }
@@ -568,6 +580,13 @@ body {
 
 .form__textarea::placeholder {
   color: #9c9cab;
+}
+
+@media screen and (max-width: 768px) {
+  .contacts__inner {
+    flex-direction: column;
+    gap: 50px;
+  }
 }
 
 .footer {
