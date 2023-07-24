@@ -400,8 +400,13 @@ body {
   gap: 45px;
 }
 
+.works__item {
+  transition: transform 0.5s linear;
+}
+
 .works__item:hover {
   transform: rotate(5deg);
+  
 }
 
 .works {
@@ -453,19 +458,19 @@ body {
 }
 
 .achiev__item--work::before {
-  background-image: url(./img/works.svg);
+  background-image: url(../img/icons/serv-first.svg);
 }
 
 .achiev__item--people::before {
-  background-image: url(./img/clients.svg);
+  background-image: url(../img/icons/serv-second.svg);
 }
 
 .achiev__item--coffee::before {
-  background-image: url(./img/coffee.svg);
+  background-image: url(../img/icons/serv-third.svg);
 }
 
 .achiev__item--feedbacks::before {
-  background-image: url(./img/review.svg);
+  background-image: url(../img/icons/serv-four.svg);
 }
 
 .achiev__text {
