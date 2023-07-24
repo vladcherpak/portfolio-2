@@ -366,15 +366,15 @@ body {
 }
 
 .services__item--code::before {
-  background-image: url(./img/serv-first.svg);
+  background-image: url(../img/icons/serv-first.svg);
 }
 
 .services__item--cms::before {
-  background-image: url(./img/serv-second.svg);
+  background-image: url(../img/icons/serv-second.svg);
 }
 
 .services__item--cite::before {
-  background-image: url(./img/serv-third.svg);
+  background-image: url(../img/icons/serv-third.svg);
 }
 
 .services__item h2 {
@@ -458,19 +458,19 @@ body {
 }
 
 .achiev__item--work::before {
-  background-image: url(../img/icons/serv-first.svg);
+  background-image: url(../img/works.svg);
 }
 
 .achiev__item--people::before {
-  background-image: url(../img/icons/serv-second.svg);
+  background-image: url(../img/clients.svg);
 }
 
 .achiev__item--coffee::before {
-  background-image: url(../img/icons/serv-third.svg);
+  background-image: url(../img/coffee.svg);
 }
 
 .achiev__item--feedbacks::before {
-  background-image: url(../img/icons/serv-four.svg);
+  background-image: url(../img/serv-four.svg);
 }
 
 .achiev__text {
