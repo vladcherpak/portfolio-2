@@ -565,6 +565,10 @@ body {
   margin-bottom: 30px;
   padding-left: 15px;
   padding-top: 13px;
+  resize: vertical;
+  min-height:115px ;
+  max-height: 250px;
+
 }
 
 .form__button {

@@ -5,3 +5,4 @@ menuBtn.addEventListener("click", () => {
   menuBtn.classList.toggle("active");
   navList.classList.toggle("nav__active");
 });
+const form=document.querySelector("form")

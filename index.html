@@ -21,22 +21,22 @@
           </a>
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link" href="#">Про мене</a>
+              <a class="nav__link" href="#about-me">Про мене</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Навички</a>
+              <a class="nav__link" href="#skills">Навички</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Послуги</a>
+              <a class="nav__link" href="#services">Послуги</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="#works">Портфоліо</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Відгуки</a>
+              <a class="nav__link" href="#achiev">Відгуки</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Контакти</a>
+              <a class="nav__link" href="#contacts">Контакти</a>
             </li>
           </ul>
           <button class="menu__btn">
@@ -57,7 +57,7 @@
       </div>
     </header>
     <main>
-      <section class="about-me">
+      <section class="about-me" id="about-me">
         <div class="container">
           <h1 class="title">Про мене</h1>
           <p class="about-item">
@@ -76,7 +76,7 @@
           </p>
         </div>
       </section>
-      <section class="skills">
+      <section class="skills" id="skills">
         <div class="container">
           <h1 class="title">Навички</h1>
           <div class="skills-inner">
@@ -108,7 +108,7 @@
           </div>
         </div>
       </section>
-      <section class="services">
+      <section class="services" id="services">
         <div class="container">
           <h1 class="title">Послуги</h1>
           <ul class="services__list">
@@ -188,7 +188,7 @@
           </ul>
         </div>
       </section>
-      <section class="achiev">
+      <section class="achiev" id="achiev">
         <div class="container">
           <ul class="achiev__list">
             <li class="achiev__item achiev__item--work">
@@ -210,7 +210,7 @@
           </ul>
         </div>
       </section>
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <div class="container">
           <h2 class="title">Контакти</h2>
           <div class="contacts__inner">
@@ -244,11 +244,12 @@
               <div class="form__inner">
                 <label class="form__label">
                   <p>Ваше імя</p>
-                  <input type="text" class="form__input" placeholder="Іван" />
+                  <input name="name" type="text" class="form__input" placeholder="Влад" />
                 </label>
                 <label class="form__label">
                   <p>Номер телефону</p>
                   <input
+                  name="phone"
                     type="tel"
                     class="form__input"
                     placeholder="+380501111111"
@@ -258,7 +259,7 @@
               <label class="textarea__label">
                 <p>Ваше повідомлення</p>
                 <textarea
-                  name=""
+                  name="message"
                   class="form__textarea"
                   placeholder="Текст вашого півідомлення"
                 ></textarea>
@@ -272,6 +273,6 @@
     <footer class="footer">
       <img src="./img/footer-logo.svg" alt="footer__logo" />
     </footer>
+    <script src="./index.js"></script>
   </body>
-  <script src="./index.js"></script>
 </html>
