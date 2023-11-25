@@ -392,6 +392,7 @@ body {
   max-width: 360px;
   width: 100%;
   object-fit: cover;
+  background-size: cover;
 }
 
 .works__list {
